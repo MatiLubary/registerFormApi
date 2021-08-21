@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cambay', sans-serif;
+}
+
+.banner {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 255, 0, 0.3);
+    border-top: 2px solid #006400;
+    border-bottom: 2px solid #006400;
+    margin-bottom: 40px;
+}
+
+.wrapper,  .field--wrapper, .button--wrapper, .image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field--wrapper {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.fieldValue, .fieldName {
+    width: 100%;
+}
+
+.fieldName {
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.fieldValue {
+    padding-left: 4px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+.image-upload {
+    margin: 36px 0;
+}
+
+.image-upload label {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+input[type="file"] { 
+    opacity: 0; /* make transparent */
+    z-index: -1; /* move under anything else */
+    position: absolute; /* don't let it take up space */
+}
+
+  input[type="file"]:focus + label {
+    outline: 2px solid;  /* example focus style */
+}
+
+.fas {
+    font-size: 48px;
+    margin-right: 12px;
+}
+
+  
+.button + .button {
+    margin-top: 16px;
+}
+
+.button {
+    width: 200px;
+    height: 34px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Cambay', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.button--submit {
+    background-color: rgb(46, 190, 10);
+    border: 2px solid #30be04;
+    color: white;
+}
+
+.button--submit:hover {
+    background-color: rgb(32, 126, 9);
+}
+
+.button--cancel {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.button--cancel:hover {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff
+}
